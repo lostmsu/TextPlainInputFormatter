@@ -15,7 +15,7 @@ namespace TestApi.Controllers
 
         [HttpPost(Name = "Text")]
         [Consumes("text/plain")]
-        public IEnumerable<string> StringConsumer([FromBody]string text)
+        public IEnumerable<string> StringConsumer([FromBody] string text)
         {
             return text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         }
