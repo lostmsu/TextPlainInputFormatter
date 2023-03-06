@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageProjectUrl>https://github.com/mattiaskagstrom/TextPlainInputFormatterForAspNetCore/tree/master/TextPlainInputFormatterForAspNetCore</PackageProjectUrl>
     <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/mattiaskagstrom/TextPlainInputFormatterForAspNetCore</RepositoryUrl>
     <PackageTags>InputFormatter;ASP.Net;Core;aspnetcore;Content-Type;</PackageTags>
   </PropertyGroup>
@@ -13,7 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ReadMe.md">
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
